@@ -9,21 +9,13 @@ export default function AirQualityData(props) {
   if (loading) {
     return <div>Loading</div>;
   }
-  if (data.length === 0) {
+  if (data.length === 0 || data.value == null) {
     return null;
   }
 
   return (
-    <>
-      <div>
-        {data.value != null && (
-          <>
-            <div>
-              {data.value.toFixed(4)} {data.unit} - {data.parameter}
-            </div>
-          </>
-        )}
-      </div>
-    </>
+    <div>
+      {data.value.toFixed(4)} {data.unit} - {data.parameter}
+    </div>
   );
 }
