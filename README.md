@@ -11,4 +11,4 @@ The tool must:
 
 
 test in your browser:
-https://codesandbox.io/s/github/jonatanYanovsky/air-quality-assessment-JonatanYanovsky-/tree/main
+https://codesandbox.io/s/github/jonatanYanovsky/air-quality-assessment-JonatanYanovsky--1
