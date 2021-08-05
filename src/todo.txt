@@ -1,0 +1,32 @@
+- Allow the user to input two cities
+two input fields - what kind? validation?
+verify non-empty input field and that the city exists
+use Formik and Yup to verify that the fields are not empty (DONE)
+add a "compare" button that submits the form and allows to compare the cities (NOT NEEDED)
+
+compare button could be unnecessary, as each city's data could be called individually as the user types them in
+when the user stops typing for .3 seconds, do a call to the api for that city
+useEffect with the field as an input, set a timer, or clear it in the cleanup function (user started typing again)
+
+actually, the useEffect will just save the field value to the redux store, and the air quality columns will do the loading with their own useEffect function
+
+
+- Display the air quality of the corresponding cities, allowing the user to compare the two
+what will the comparison of air quality look like?
+assuming a side-by-side comparison of each city's data, in column format
+
+
+- Gracefully handle any API or user errors
+which errors?
+errors from incorrectly typed city -> city does not exist
+api error: city does exist (and is typed correctly), but the air quality api responds with an error
+use axios to check for and handle network errors, and cross check with an external api (Teleport public API) to verify that the city typed actually exists
+cross-checking that the city exists may be unnecessary (the AQ api will respond with error, and the user can be let known that the city could not be found)
+
+
+- Tool should be easily used by the general public
+create a simple UI
+
+
+input autocomplete and multi-page functionality is out of scope for this task
+mobile and responsive views are also out of scope

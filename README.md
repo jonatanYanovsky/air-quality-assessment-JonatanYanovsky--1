@@ -8,3 +8,7 @@ The tool must:
 * Display the air quality of the corresponding cities, allowing the user to compare the two
 * Gracefully handle any API or user errors
 * Tool should be easily used by the general public
+
+
+test in your browser:
+https://codesandbox.io/s/github/jonatanYanovsky/air-quality-assessment-JonatanYanovsky-/tree/main
